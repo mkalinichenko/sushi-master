@@ -1,0 +1,241 @@
+:root {
+    --ff-main: 'PT Sans', sans-serif;
+    --color-bg-dark: #0072bc;
+    --color-bg-light: #6dcff6;
+    --color-dark: #080808;
+    --color-light: #fff;
+    --color-gray: #333;
+    --color-accent: #f26522;
+    --color-btn: #06811a;
+    --color-title: #8e0000;
+    --fw-bold: 700;
+    --fw-normal: 400;
+    --fz-main: 1.6rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: var(--fz-main);
+    font-family: var(--ff-main);
+    font-weight: var(--fw-normal);
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-heading);
+}
+
+h3 {
+    font-size: 2.4rem;
+    color: var(--color-title);
+}
+
+a {
+    color: inherit;
+    text-decoration: underline transparent;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+input, button {
+    display: block;
+    font-family: var(--ff-main);
+    font-size: 1.7rem;
+}
+ 
+/* header */
+.header {
+    width: 100%;
+    
+    background-color: var(--color-bg-dark);
+}
+.container {
+    min-width: 32rem;
+    padding: 2rem 1.5rem;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-img {
+    width: 7rem;
+    height: 6rem;
+}
+
+.logo-text {
+    color: var(--color-light);
+    font-weight: var(--fw-bold);
+}
+
+.header-button {
+    width: 15rem;
+    height: 5rem;
+    display: block;
+    font-weight: var(--fw-bold);
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    border: none;
+    outline: none;
+    transition: .2s ease-in-out;
+}
+
+.header-button:hover {
+    background-color: #cb531c;
+}
+
+/* content */
+.content-description {
+    text-align: center;
+}
+.content-title {
+    margin-bottom: 3rem;
+}
+
+.products-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.products-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.products-list__item {
+    max-width: 30rem;
+    margin: 0 auto;
+    border: .1rem solid #999595;
+    border-radius: 1rem;
+    padding: .5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.products-list__item img {
+    margin-bottom: 1rem;
+}
+
+.products-list__title {
+    margin-bottom: 2rem;
+}
+
+.products-list-text {
+    color: var(--color-gray);
+    margin-bottom: 3.5rem;
+}
+
+.products-list__btn {
+    color: var(--color-btn);
+    font-weight: var(--fw-bold);
+    border: none;
+    background: none;
+    margin: 0 auto 2rem;
+}
+
+.products-list__action {
+    font-size: 1.7rem;
+    color: #444444;
+    font-weight: var(--fw-bold);
+    border: none;
+    background: none;
+    margin: 0 auto 2rem;
+}
+.products-banner {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+/* slider */
+.slider {
+    padding: 2rem 1rem;
+    height: auto;
+    text-align: center;
+    background-color: var(--color-bg-light);
+}
+
+.slider-title {
+    color: var(--color-light);
+    filter: drop-shadow(0px 6px 7px rgba(0,0,0,0.35));
+    margin-bottom: 3rem;
+}
+
+.slider-item {
+    max-width: 86rem;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-track {
+    display: flex;
+}
+
+.slider-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto;
+    position: relative;
+}
+.slider-pagination .slick-arrow {
+    position: absolute;
+    top: 1rem;
+    font-size: 0;
+    border: none;
+    width: 2rem;
+    height: 4rem;
+}
+
+.slider-pagination .slick-arrow.slick-prev {
+    left: 3rem;
+    background: url(../images/left-arrow.webp) 0 0 / 100% no-repeat;
+}
+
+.slider-pagination .slick-arrow.slick-next {
+    right: 3rem;
+    background: url(../images/right-arrow.webp) 0 0 / 100% no-repeat;
+}
+
+.slider-pagination .slick-dots {
+    display: flex;
+    align-items: center;
+    margin-top: 2.3rem;
+}
+
+.slider-pagination .slick-dots li{
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.slider-pagination .slick-dots button{
+    font-size: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+}
+
+.footer {
+    padding: 2rem 2rem;
+    text-align: center;
+}
